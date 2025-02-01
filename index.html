@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>философия</title>
+    <link rel="icon" type="image/x-icon" href="./img/ant.png" />
+    <link rel="stylesheet" href="sunflower.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="headline">Le jour de la dolcezza🐜</h1>
+      <div id="countdown">
+        <ul>
+          <li><span id="days"></span>giorni</li>
+          <li><span id="hours"></span>ore</li>
+          <li><span id="minutes"></span>minuti</li>
+          <li><span id="seconds"></span>secondi</li>
+        </ul>
+        <a
+          href="#"
+          id="lockedpadlock"
+          onclick="document.getElementById('padlock').src='./img/dog.gif';document.getElementById('my_audio').play(); document.getElementById('memetexto').style.display='block'"
+          ><img src="./img/locked.png" id="padlock" class="padlock"
+        /></a>
+        <p class="memetexto" id="memetexto">
+          wrong day, sweetie, thanks for trying!
+        </p>
+      </div>
+      <div id="content" class="emoji">
+        <span>🥳</span>
+        <span>🎉</span>
+        <span>🎂</span>
+        <span>♒</span>
+        <span>📚</span>
+        <br />
+        <br />
+        <p>
+          Um bolinho docinho para uma formiguinha!<br /><br />Sache que ton
+          existance sucre la vie.<br /><br />Uma palavra: Venusta, com "V"
+          de....hmmm...não sei!
+        </p>
+        <a
+          href="#"
+          id="unlockedpadlock"
+          onclick="document.getElementById('aberto').style.display = 'none'; document.getElementById('msg').style.display = 'none'; document.getElementById('my_video').style.display ='block'; document.getElementById('my_video').play()"
+          ><img src="./img/unlocked.png" id="aberto" class="padlock"
+        /></a>
+        <p id="msg">click, click, click!</p>
+        <audio id="my_audio">
+          <source src="rala.mp3" autoplay="autoplay" type="audio/mpeg" />
+        </audio>
+        <video id="my_video" width="320" height="240" controls>
+          <source src="birthdaysong.mp4" type="video/mp4" autoplay />
+          <source src="movie.ogg" type="video/ogg" />
+          Your browser does not support the video tag.
+        </video>
+        <a href="#" id="katySong"
+          ><img src="./img/katy.jpg" id="katySong" class="katy"
+        /></a>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

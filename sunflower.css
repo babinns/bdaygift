@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto", "sans-serif";
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  background: rgb(93, 135, 54);
+  background: linear-gradient(
+    0deg,
+    rgba(93, 135, 54, 1) 6%,
+    rgba(128, 157, 60, 1) 52%,
+    rgba(169, 196, 108, 1) 91%
+  );
+}
+
+.start-text {
+  display: flex;
+  color: white;
+  font-style: bold;
+  margin-bottom: 15px;
+}
+
+.start-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50%;
+  justify-content: center;
+  text-align: center;
+}
+
+.sun-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 70px;
+  height: 70px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: myfirst 1.5s infinite linear;
+}
+
+@keyframes myfirst {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.padlock {
+  background-image: url("./img/unlocked.png");
+  width: 100px;
+  margin-top: 70px;
+}
+
+.padlock:hover {
+  cursor: pointer;
+}
+
+.memetexto {
+  display: none;
+}
+
+#my_video {
+  display: none;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  position: absolute;
+  top: 20%;
+  color: #333;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.katy {
+  display: none;
+  width: 50px;
+  margin-top: 70px;
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
+
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+.emoji {
+  display: none;
+  padding: 1rem;
+}
+
+.emoji span {
+  font-size: 2rem;
+  padding: 0 0.5rem;
+}
+
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: calc(1.5rem * var(--smaller));
+  }
+
+  li {
+    font-size: calc(1.125rem * var(--smaller));
+  }
+
+  li span {
+    font-size: calc(3.375rem * var(--smaller));
+  }
+}
